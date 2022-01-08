@@ -57,9 +57,14 @@ const promptUser = () => {
             message: 'Who contributed to this project?'
         },
         {
-            type: 'input',
+            type: 'list',
             name: 'test',
-            message: 'Which tests did you use?'
+            message: 'Which tests did you use?',
+            choices: 
+            ['Jest',
+            'Mocha',
+            'Jasmine',
+            'AVA']
         },
         {
             type: 'input',
@@ -70,7 +75,7 @@ const promptUser = () => {
 };
 
 // TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {}
 
 
 // TODO: Create a function to initialize app
